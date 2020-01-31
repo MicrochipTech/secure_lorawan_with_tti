@@ -17,7 +17,6 @@
 4. [Hardware Setup](#step4)
 5. [Lab 1](#step5)
 6. [Lab 2](#step6)
-7. [Running the demo](#step7)
 
 
 ## Abstract <a name="step1"></a>
@@ -175,31 +174,8 @@ Use the appendix sheet to find your OTAA credentials.</br>
 
 ## Lab 2 <a name="step6"></a>
 
-Activating the device within TTI is the next step.</br>
-
-Go here: <a href="https://www.thethingsindustries.com/technology/security-solution" target="_blank">https://www.thethingsindustries.com/technology/security-solution</a>
-
-And follow the steps to get started with claiming your devices.
+Refer to the pdf.
+More data will come February 6th.
 
 
-## Running the demo <a name="step7"></a>
-
-Go back to the Tera Term UART console
-</br>
-![](Doc/UART_Console2.png)
-</br>
-Press "1" to start the Demo Application
-</br>
-Select the band where your device is operating
-</br>
-![](Doc/UART_Console3.png)
-</br>
-Then, the end device application transmits a Join Request message. If a Join Accept message was received and validated, the SAM R34 Xplained Pro board will be joined to the Join Server.
-</br>
-![](Doc/UART_Console4.png)
-</br>
-Press "2" to send a packet consisting of a temperature sensor reading
-</br>
-![](Doc/UART_Console5.png)
-</br>
 
