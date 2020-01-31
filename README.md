@@ -10,6 +10,7 @@
 
 **Welcome to the Microchip Workshop we did at The Things Conference 2020 in Amsterdam. From here you have the choice to either follow the Lab manual instructions described below or to follow the Microchip_workshop_slide.pdf document which expose you on a real situation with use cases**
 </br>
+![](Doc/workshop.png)
 
 1. [Abstract](#step1)
 2. [Prerequisites](#step2)
