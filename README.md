@@ -170,12 +170,61 @@ Use the appendix sheet to find your OTAA credentials.</br>
 20. Observe the result on the dashboard and confirm you can see your data</br>
 ![](Doc/lab1_dashboard.png)</br>
 
-
-
 ## Lab 2 <a name="step6"></a>
 
-Refer to the pdf.
-More data will come February 6th.
+1. Perform the following hardware setup:</br>
+a) Connect ECC608A Socket board to SAMR34 Xpro EXT3</br>
+b) Plug the antenna and always make sure you have the antenna plugged to your SAMR34 Xpro board before powering it up.</br>
+c) Connect your SAMR34 Xpro board to the computer through the micro-USB cable. USB cable must be connected to the EDBG USB connector of the kit.</br>
+d) Wait for USB driver installation and COM port mounting. The USB port powers the board and enables the user to communicate with the kit.</br>
+![](Doc/lab2_hardware_setup.png)</br>
+2. Open and configure Serial Console program (e.g. TeraTerm): COMxx 115200 bps / 8 / N /1</br>
+3. Restart the application by pressing Reset button on SAMR34 Xpro board</br>
+4. From the console, press ‘2’ to Select Lab2</br>
+![](Doc/lab2_select_lab.png)</br>
+5. Observe the following identifiers coming from the ATEC6608A Secure Element</br>
+![](Doc/lab2_secure_element_ids.png)</br>
+6. Record your own DevEUI and Serial Number</br>
+7. Ask the instructor for the manifest file which match your set of identifiers</br>
+8. Open the <a href="https://microchip.join.cloud.thethings.industries/" target="_blank">TTI Join Server Console</a></br>
+9. Login by using the TTI Credentials from the appendix sheet</br>
+![](Doc/lab2_join_server_login.png)</br>
+10. Make sure you are connected to the Join Server</br>
+![](Doc/lab2_join_server.png)</br>
+11. Select “Go to applications”</br>
+![](Doc/lab2_goto_applications.png)</br>
+12. Select “thethingsconference” application</br>
+![](Doc/lab2_thethingsconference_application.png)</br>
+13. Go to “Devices” in the left menu and click on “+ Import Device” in order to claim the device</br>
+a) Select format: “Microchip ATEC6608A-TNGLORA Manifest File”</br>
+b) Select your manifest file</br>
+c) Enable set claim authentication code</br>
+d) Create devices</br>
+![](Doc/lab2_import_devices.png)</br>
+14. Click Proceed</br>
+![](Doc/lab2_import_finished.png)</br>
+**Your secure element is now claimed in your application. The secure element cannot be claimed by anyone else until you delete the device.**</br>
+15. Observe your new device in the list</br>
+![](Doc/lab2_new_device.png)</br>
+16. Claiming the secure element only create device on the Join Server: it is not registered on a Network Server or Application Server yet.</br>
+This step requires the usage of the Command Line Interface (CLI).
+<a href= "https://enterprise.thethingsstack.io/v3.3.2/guides/cloud-hosted/tti-join-server/activate-devices-cloud-hosted/" target="_blank">Refer to this guide"</a></br>
+For the purpose of this workshop, the instructor will activate your device.</br>
+![](Doc/lab2_device_activation.png)</br>
+17. Open the <a href="https://microchip.eu1.cloud.thethings.industries/console" target="_blank">TTI Network Server Console</a></br>
+18. Login by using the TTI Credentials from the appendix sheet</br>
+19. Select “Go to applications”</br>
+20. Select “thethingsconference” application</br>
+21. Go to “Devices” in the left menu</br>
+22. Your new device appears now in the TTI Network Server Application / device list</br>
+![](Doc/lab2_device_appears.png)</br>
+23. Come back to the Serial Console in order to interact with Lab 2 Application</br>
+24. Enter your first name (10char max.) and press enter</br>
+25. Your device should successfully join the network</br>
+![](Doc/lab2_join_network.png)</br>
+26. Press SAMR34 Xpro SW0 button to transmit an uplink message</br>
+![](Doc/lab2_transmit_uplink_message.png)</br>
+27. Observe the result on the dashboard and confirm you can visualize your data</br>
 
-
+Congratulations, you have finished the lab.
 
