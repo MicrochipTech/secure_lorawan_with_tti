@@ -59,8 +59,9 @@ Until the next Atmel Studio IDE release, you have to manually install the Device
 
 ## Resources <a name="step3"></a>
 
-Several accounts have been already created specifically for this workshop in the microchip tenant.</br>
+Several accounts have been created specifically for this workshop in the microchip tenant.</br>
 An appendix sheet with the credentials has been provided during the workshop.</br>
+**Outside this workshop, you need to have your own TTI account with your own tenant.**</br>
 
 Useful links:</br>
 - <a href="https://microchip.eu1.cloud.thethings.industries/console" target="_blank">TTI Network server</a></br>
