@@ -29,7 +29,7 @@ With hands-on approach, you will be guided through the process of getting starte
 - <a href="https://www.thethingsindustries.com/technology/hardware#gateway" target="_blank">The Things LoRa(r) Gateway</a></br>
 - <a href="https://www.microchip.com/Developmenttools/ProductDetails/DM320111" target="_blank">SAM R34 Xplained Pro Evaluation Kit</a></br>
 - <a href="https://www.microchipdirect.com/product/search/all/AT88CKSCKTUDFN-XPRO" target="_blank">CryptoAuthentication UDFN Socket Kit</a></br>
-- <a href="https://www.microchipdirect.com/product/search/all/ATECC08A-TNGLORA" target="_blank">ATECC608A-TNGLORA Secure Element</a><br>
+- <a href="https://www.microchipdirect.com/product/search/all/tnglora" target="_blank">ATECC608A-TNGLORA Secure Element</a><br>
 - Device security (manifest) file. You can obtain this from your <a href="https://www.microchipdirect.com/orders" target="_blank">Microchip Direct order history</a></br>
 - Access to The Things Industries Cloud Hosted. <a href="cloud@thethingsindustries.com" target="_blank">Contact The Things Industries to get onboarded</a></br>
 - An application in The Things Industries Cloud Hosted. <a href="https://enterprise.thethingsstack.io/v3.3.2/guides/getting-started/console/#create-application" target="_blank">See instructions</a></br>
