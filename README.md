@@ -22,7 +22,15 @@
 
 ## Abstract <a name="step1"></a>
 
-With hands-on approach, you will be guided through the process of getting started with developing a secure LoRa® end device product using Microchip Technology’s pre-provisioned ATECC608A secure element along with TTI Join server.
+With hands-on approach, you will be guided through the process of getting started with developing a secure LoRa® end device product using Microchip Technology’s <a href="https://www.microchip.com/design-centers/wireless-connectivity/low-power-wide-area-networks/lora-technology/sam-r34-r35" target="_blank">SAM R34/R35 Low Power LoRa® Sub-GHz MCU</a></br> and <a href="https://www.microchip.com/design-centers/security-ics/trust-platform/trust-go/trust-go-lora-secure-authentication-with-join-servers" target="_blank">pre-provisioned ATECC608A secure element</a> along with <a href="https://www.thethingsindustries.com" target="_blank">TTI Join server.</a>
+</br>
+</br>
+The SAM R34/R35 is a highly-integrated LoRa® family which includes an ultra-low power, high-performance 32-bit microcontroller (MCU), LoRa transceiver and software stack. With certified reference designs, and proven interoperability with major LoRaWAN™ gateway and network providers, the SAM R34/35 MCUs significantly reduce time to market for Internet of Things (IoT) designs.
+<a href="https://www.microchip.com/design-centers/wireless-connectivity/low-power-wide-area-networks/lora-technology/sam-r34-r35" target="_blank">More details on the product page</a></br>
+</br>
+Among "Wireless Made Fun!" solutions, checkout our  
+<a href="https://github.com/MicrochipTech/atsamr34_ecc608a_tti" target="_blank">"Wireless Made Easy!" technology brick with SAMR34, ECC608A and TTI Join Server.</a></br>
+
 
 ## Prerequisites <a name="step2"></a>
 
