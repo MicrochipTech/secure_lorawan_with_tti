@@ -10,7 +10,13 @@
 
 **Welcome to the Microchip Workshop we did at The Things Conference 2020 in Amsterdam. From here you have the choice to either follow the Lab manual instructions described below or to follow the Microchip_workshop_slide.pdf document which expose you on a real situation with use cases**
 </br>
-![](Doc/workshop.png)
+
+** Watch the video of the workshop delivered at the Things Virtual Conference the April 16th, 2020**
+<a href="https://youtu.be/BqONQ92_-fw" target="_blank">
+<img src="https://img.youtube.com/vi/BqONQ92_-fw/0.jpg" 
+alt="Secure Authentication with SAM R34 & ATECC608A and The Things Industries's Join Server" width="800"></a>
+
+<!-- ![](Doc/workshop.png) -->
 
 1. [Abstract](#step1)
 2. [Prerequisites](#step2)
