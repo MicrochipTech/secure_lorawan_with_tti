@@ -115,7 +115,8 @@ Bootloader revision: 1, commit: 7167873a, timestamp: 1496411298
 Build time: Jun 19 2019 11:01:21
 Reboot reason: 0x03
 ```
-You need to update the firmware from 1.0.7 to 1.0.8.
+You need to update the firmware from 1.0.7 to 1.0.8.</br>
+
 3. Download the "beta firmware" (1.0.8) from https://github.com/TheThingsProducts/gateway/tree/develop/firmware
 </br>If you are using a Microchip Programming Tool (ICDx, PICkit), make sure to pick the "beta firmware" with bootloader.
 4. For programming the firmware, follow the steps here: https://www.thethingsnetwork.org/docs/gateways/gateway/programhexfile.html
