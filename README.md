@@ -21,9 +21,10 @@ alt="Secure Authentication with SAM R34 & ATECC608A and The Things Industries's 
 1. [Abstract](#step1)
 2. [Prerequisites](#step2)
 3. [Resources](#step3)
-4. [Hardware Setup](#step4)
-5. [Lab 1](#step5)
-6. [Lab 2](#step6)
+4. [Gateway Setup](#step4)
+4. [Hardware Setup](#step5)
+5. [Lab 1](#step6)
+6. [Lab 2](#step7)
 
 
 ## Abstract <a name="step1"></a>
@@ -80,17 +81,65 @@ An appendix sheet with the credentials has been provided during the workshop.</b
 Useful links:</br>
 - <a href="https://microchip.eu1.cloud.thethings.industries/console" target="_blank">TTI Network server</a></br>
 - <a href="https://microchip.join.cloud.thethings.industries/" target="_blank">TTI Join server</a></br>
-- <a href="https://enterprise.thethingsstack.io/v3.3.2/guides/" target="_blank">The Things Stack Guides</a></br>
+- <a href="https://enterprise.thethingsstack.io/" target="_blank">The Things Stack Guides</a></br>
 
 TTI and Microchip developed a security solution for LoRaWAN that enables secure key provisioning and secure cryptographic operations using secure elements.
 </br>
 - <a href="https://www.thethingsindustries.com/technology/security-solution" target="_blank">End-to-end LoRaWAN Security solution</a></br>
-- <a href="https://enterprise.thethingsstack.io/v3.3.2/guides/claim-atecc608a/" target="_blank">Claim ATECC608A Secure Elements</a></br>
-- <a href="https://enterprise.thethingsstack.io/v3.3.2/guides/cloud-hosted/tti-join-server/activate-devices-cloud-hosted/" target="_blank">Activate devices on the Things Industries Cloud Hosted</a></br>
+- <a href="https://enterprise.thethingsstack.io/v3.8.1/devices/claim-atecc608a/" target="_blank">Claim ATECC608A Secure Elements</a></br>
+- <a href="https://enterprise.thethingsstack.io/v3.8.1/getting-started/cloud-hosted/tti-join-server/register-devices/" target="_blank">Activate devices on the Things Industries Cloud Hosted</a></br>
 
+## Gateway Setup <a name="step4"></a>
 
+Follow <a href="https://enterprise.thethingsstack.io/v3.8.1/gateways/" target="_blank">this guide </a> to add gateway in the console and configure the gateway selected.</br>
 
-## Hardware setup <a name="step4"></a>
+**Here let's connect The Things Kickstarter Gateway to TTI v3 Server.**</br>
+
+Follow the instructions <a href="https://enterprise.thethingsstack.io/v3.8.1/gateways/thethingskickstartergateway/" target="_blank">here</a>
+
+From the console:
+1. Create a gateway within the console. Choose a Gateway ID (use short name without special characters. e.g. thethingseu03). An EUI is not necessary.
+</br>For Europe, select Frequency Plan = Europe 863-870 MHz.
+</br>Here the Gateway server address is: microchip.eu1.cloud.thethings.industries
+2. When gateway created, add an API Key to the new created gateway. Note carrefully the key.
+</br>
+
+Firmware of the gateway:
+1. Make sure you gateway is loaded with 1.0.8 Firmware
+2. Check your firmware revision by connecting a USB-to-UART cable to UART pins of the PIC32 MCU inside the gateway.
+</br>Follow the procedure here: https://www.thethingsnetwork.org/docs/gateways/gateway/faq.html
+</br>On reset, if you get:
+```
+Firmware name: AmazingAckermann, type: 0, version: 1.0.7, commit: e9d35a30, timestamp: 1560942019
+Bootloader revision: 1, commit: 7167873a, timestamp: 1496411298
+Build time: Jun 19 2019 11:01:21
+Reboot reason: 0x03
+```
+You need to update the firmware from 1.0.7 to 1.0.8.
+3. Download the "beta firmware" (1.0.8) from https://github.com/TheThingsProducts/gateway/tree/develop/firmware
+</br>If you are using a Microchip Programming Tool (ICDx, PICkit), make sure to pick the "beta firmware" with bootloader.
+4. For programming the firmware, follow the steps here: https://www.thethingsnetwork.org/docs/gateways/gateway/programhexfile.html
+</br>
+
+Configure the gateway:
+1. Open the front panel of the gateway casing.
+2. While the gateway is powered on, hold the pink reset button for 5 seconds (until each of the 5 LEDs illuminate). This erases the existing configuration on the gateway.
+</br>The gateway will now expose a WiFi Access Point whose SSID is of the form TheThings-Gateway-xxxxx, to which you should now connect using password thethings.
+3. In a web browser, open the gateway’s configuration page by navigating to http://192.168.84.1/
+4. Enter the following fields:
+</br>Gateway-ID: type the gateway ID that you chose earlier. Here we are connected to a Microchip Cloud Hosted tenant, so the tenant ID must be added to the Gateway ID field.
+</br>(e.g.: thethingseu3@microchip)
+</br>Choose the WiFi network from the drop down and enter a password if necessary.
+</br>Click the Show Advanced Options button and enter the following fields:
+</br> - Account Server: The URL of the Things Enterprise Stack (e.g.: https://microchip.eu1.cloud.thethings.industries/)
+</br> - Gateway Key: The API Key that you created earlier. (e.g.: NNSXS.QPUWK3...................................................)
+5. Click Save when done.
+6. Please wait while your gateway communicates with the Things Network backend.
+7. This will apply the setting and reboot the gateway. If all the steps have been followed correctly, your gateway will now connect to The Things Enterprise Stack .
+
+</br>Check <a href="https://www.thethingsnetwork.org/docs/gateways/gateway/ledstatus.html" target="_blank">here</a> to understand the LED status of the gateway.
+
+## Hardware setup <a name="step5"></a>
 
 Configure the DIP switch of the CryptoAuthenticationUDFN Socket kit for I2C communication with the host microcontroller.
 **1, 3 and 6 must be placed to ON position**
@@ -133,7 +182,7 @@ The USB ports powers the board and enables the user to communicate with the kits
 - Wait for USB driver installation and COM ports mounting. </br>
 - Launch Tera Term program and configure the serial ports mounted with: **115200 bps, 8/N/1**
 
-## Lab 1 <a name="step5"></a>
+## Lab 1 <a name="step6"></a>
 
 1. Open the <a href="https://microchip.eu1.cloud.thethings.industries/console" target="_blank">TTI Network Server Console</a></br>
 2. Login by using the TTI Credentials from the appendix sheet</br>
@@ -186,7 +235,7 @@ Use the appendix sheet to find your OTAA credentials.</br>
 20. Observe the result on the dashboard and confirm you can see your data</br>
 ![](Doc/lab1_dashboard.png)</br>
 
-## Lab 2 <a name="step6"></a>
+## Lab 2 <a name="step7"></a>
 
 1. Perform the following hardware setup:</br>
 a) Connect ECC608A Socket board to SAMR34 Xpro EXT3</br>
