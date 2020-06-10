@@ -82,6 +82,7 @@ Useful links:</br>
 - <a href="https://microchip.eu1.cloud.thethings.industries/console" target="_blank">TTI Network server</a></br>
 - <a href="https://microchip.join.cloud.thethings.industries/" target="_blank">TTI Join server</a></br>
 - <a href="https://enterprise.thethingsstack.io/" target="_blank">The Things Stack Guides</a></br>
+- <a href="https://thethingsindustries.atlassian.net/wiki/spaces/TKB/pages/1500053510/The+Things+Enterprise+Stack+TTES" target="_blank">The Things Enterprise Stack FAQ page</a></br>
 
 TTI and Microchip developed a security solution for LoRaWAN that enables secure key provisioning and secure cryptographic operations using secure elements.
 </br>
