@@ -87,16 +87,16 @@ Useful links:</br>
 TTI and Microchip developed a security solution for LoRaWAN that enables secure key provisioning and secure cryptographic operations using secure elements.
 </br>
 - <a href="https://www.thethingsindustries.com/technology/security-solution" target="_blank">End-to-end LoRaWAN Security solution</a></br>
-- <a href="https://enterprise.thethingsstack.io/v3.8.1/devices/claim-atecc608a/" target="_blank">Claim ATECC608A Secure Elements</a></br>
-- <a href="https://enterprise.thethingsstack.io/v3.8.1/getting-started/cloud-hosted/tti-join-server/register-devices/" target="_blank">Activate devices on the Things Industries Cloud Hosted</a></br>
+- <a href="https://thethingsstack.io/devices/claim-atecc608a/" target="_blank">Claim ATECC608A Secure Elements</a></br>
+- <a href="https://thethingsstack.io/getting-started/cloud-hosted/tti-join-server/register-devices/" target="_blank">Activate devices on the Things Industries Cloud Hosted</a></br>
 
 ## Gateway Setup <a name="step4"></a>
 
-Follow <a href="https://enterprise.thethingsstack.io/v3.8.1/gateways/" target="_blank">this guide </a> to add gateway in the console and configure the gateway selected.</br>
+Follow <a href="https://thethingsstack.io/gateways/" target="_blank">this guide </a> to add gateway in the console and configure the gateway selected.</br>
 
 **Here let's connect The Things Kickstarter Gateway to TTI v3 Server.**</br>
 
-Follow the instructions <a href="https://enterprise.thethingsstack.io/v3.8.1/gateways/thethingskickstartergateway/" target="_blank">here</a>
+Follow the instructions <a href="https://thethingsstack.io/gateways/thethingskickstartergateway/" target="_blank">here</a>
 
 From the console:
 1. Create a gateway within the console. Choose a Gateway ID (use short name without special characters. e.g. thethingseu03). An EUI is not necessary.
@@ -275,7 +275,7 @@ d) Create devices</br>
 ![](Doc/lab2_new_device.png)</br>
 16. Claiming the secure element only create device on the Join Server: it is not registered on a Network Server or Application Server yet.</br>
 This step requires the usage of the Command Line Interface (CLI).
-<a href= "https://enterprise.thethingsstack.io/v3.3.2/guides/cloud-hosted/tti-join-server/activate-devices-cloud-hosted/" target="_blank">Refer to this guide"</a></br>
+<a href= "https://thethingsstack.io/getting-started/cloud-hosted/tti-join-server/activate-devices-cloud-hosted/" target="_blank">Refer to this guide"</a></br>
 For the purpose of this workshop, the instructor will activate your device.</br>
 ![](Doc/lab2_device_activation.png)</br>
 17. Open the <a href="https://microchip.eu1.cloud.thethings.industries/console" target="_blank">TTI Network Server Console</a></br>
