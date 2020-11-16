@@ -8,7 +8,7 @@
 </p>
 </a>
 
-**Welcome to the Microchip Workshop we did at The Things Conference 2020 in Amsterdam. From here you have the choice to either follow the Lab manual instructions described below or to follow the Microchip_workshop_slide.pdf document which expose you on a real situation with use cases**
+**Welcome to the Microchip Workshop we did at The Things Conference 2020 in Amsterdam. From here you have the choice to either follow the Lab manual instructions described below or to follow the [Microchip_workshop_slide.pdf](Microchip_workshop_slide.pdf) document which expose you on a real situation with use cases**
 </br>
 
 **Watch the video of the workshop delivered at the Things Virtual Conference the April 16th, 2020**
@@ -38,6 +38,15 @@ The SAM R34/R35 is a highly-integrated LoRa® family which includes an ultra-low
 Among "Wireless Made Fun!" solutions, checkout our  
 <a href="https://github.com/MicrochipTech/atsamr34_ecc608a_tti" target="_blank">"Wireless Made Easy!" technology brick with SAMR34, ECC608A and TTI Join Server.</a></br>
 
+## ⚠ Disclaimer
+
+<p><span style="color:red"><b>
+Subject to your compliance with these terms, you may use Microchip software and any derivatives exclusively with Microchip products. It is your responsibility to comply with third party license terms applicable to your use of third party software (including open source software) that may accompany Microchip software.<br>
+THIS SOFTWARE IS SUPPLIED BY MICROCHIP "AS IS". NO WARRANTIES, WHETHER EXPRESS, IMPLIED OR STATUTORY, APPLY TO THIS SOFTWARE, INCLUDING ANY IMPLIED WARRANTIES OF NON-INFRINGEMENT, MERCHANTABILITY, AND FITNESS FOR A PARTICULAR PURPOSE.<br>
+IN NO EVENT WILL MICROCHIP BE LIABLE FOR ANY INDIRECT, SPECIAL, PUNITIVE, INCIDENTAL OR CONSEQUENTIAL LOSS, DAMAGE, COST OR EXPENSE OF ANY KIND WHATSOEVER RELATED TO THE SOFTWARE, HOWEVER CAUSED, EVEN IF MICROCHIP HAS BEEN ADVISED OF THE POSSIBILITY OR THE DAMAGES ARE FORESEEABLE. TO THE FULLEST EXTENT ALLOWED BY LAW, MICROCHIP'S TOTAL LIABILITY ON ALL CLAIMS IN ANY WAY RELATED TO THIS SOFTWARE WILL NOT EXCEED THE AMOUNT OF FEES, IF ANY, THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
+</span></p></b>
+
+> Interact with your peers about this software in [LoRa Forum](https://www.microchip.com/forums/f512.aspx).
 
 ## Prerequisites <a name="step2"></a>
 
@@ -89,6 +98,10 @@ TTI and Microchip developed a security solution for LoRaWAN that enables secure 
 - <a href="https://www.thethingsindustries.com/technology/security-solution" target="_blank">End-to-end LoRaWAN Security solution</a></br>
 - <a href="https://thethingsstack.io/devices/claim-atecc608a/" target="_blank">Claim ATECC608A Secure Elements</a></br>
 - <a href="https://thethingsstack.io/getting-started/cloud-hosted/tti-join-server/register-devices/" target="_blank">Activate devices on the Things Industries Cloud Hosted</a></br>
+
+## Sample Applications
+
+[Clone/Download](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository) the current repo to get the software for the Labs.
 
 ## Gateway Setup <a name="step4"></a>
 
